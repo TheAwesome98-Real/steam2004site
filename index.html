@@ -12,15 +12,99 @@
 }
 
 body {
-	font-size:9pt;
-	background:#4C5844;
-	color:#D8DED3;
-	line-height:11px;
+  font-size: 9pt;
+  background: #4C5844;
+  color: #D8DED3;
+  line-height: 11px;
+  margin: 0;
+}
+
+.topbar {
+  background: black;
+  height: 55px;
+}
+
+.valve_logo {
+  transform: translateX(47px) translateY(18.5px);
+}
+
+.section {
+  margin-left: calc(50% - 400px);
+  margin-top: 21px;
+}
+
+.topbanner {
+  border-radius: 12px 12px 0 0;
+  background: #232a1b;
+  border-bottom: 2px solid #434d38;
+  width: 800px;
+  height: 73px;
+}
+
+.steam_logo {
+  margin-left: 12px;
+  margin-top: 14px;
+}
+
+.statusContent {
+  color: #A0AA95;
+  line-height: 12px;
+}
+
+a:link {
+  color: #D8DED3;
+  text-decoration: underline;
+}
+
+.feature_list {
+  display: inline-block;
+  margin-left: 262px;
+  width: 391px;
+  transform: translateY(-40px);
+}
+
+.getsteamnowbutton {
+  text-transform: uppercase;
+  color: #bfba50 !important;
+  background: black;
+  text-decoration: none !important;
+  float: right;
+  transform: translateX(-13px) translateY(-43px);
+  padding: 8px;
+  border-radius: 8px;
+  border: 1px solid #4C5844;
+  font-weight: bold;
+}
+
+.maincontent {
+  background: #3e4637;
+  width: 800px;
+  height: 657px;
+}
+
+.navbar {
+  background: black;
+  height: 43px;
+  border-radius: 0 0 12px 12px;
+  width: 800px;
 }
 </style>
 </head>
 <body>
 <!-- based on https://web.archive.org/web/20041101091235/http://www.steampowered.com/ -->
-<h1>steam (real)</h1>
+<div class="topbar"><img class="valve_logo" src="img/Logo_VALVE.gif" /></div>
+<div class="section">
+<div class="topbanner">
+<img class="steam_logo" src="img/Logo_Steam.png" width="180" />
+<div class="feature_list">
+<span class="statusContent">Steam 2004 brings you and your game library back to that massive gaming community from before. Check out the full <a href="#">feature list</a> now.</span>
+</div>
+<a href="#" class="getsteamnowbutton">Get Steam now!</a>
+</div>
+<div class="maincontent">
+<div class="navbar">
+</div>
+</div>
+</div>
 </body>
 </html>
